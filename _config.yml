@@ -1,0 +1,16 @@
+title: Hackspire
+email: admin@hackspire.org
+description: >-
+  Welcome to you on Hackspire, the TI-Nspire Hacking wiki. 
+  The goal of this wiki is to federate all research efforts about the Texas Instruments's TI-Nspire calculator series.
+
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: jekyllrb
+github_username:  jekyll
+
+theme: just-the-docs
+color_scheme: wider
+logo: "/assets/images/hackspire.png"
+
+encoding: "utf-8"

@@ -1,0 +1,22 @@
+$content-width: 80rem;
+
+div.compact_table + div.table-wrapper th {
+    min-width: unset
+}
+div.compact_table + div.table-wrapper td {
+    min-width: unset
+}
+
+div.tiny_table + div.table-wrapper td {
+    min-width: unset;
+    padding: unset;
+    padding-left: 2px;
+    font-size: 0.7rem !important;
+}
+div.tiny_table + div.table-wrapper th {
+    min-width: unset;
+    padding: unset;
+
+    padding-left: 2px;
+    font-size: 0.7rem !important;
+}
