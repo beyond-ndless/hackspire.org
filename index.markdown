@@ -60,7 +60,7 @@ because TI does not have time for it!
             <a href="C_and_assembly_development_introduction" title="C and assembly development introduction">C and assembly development introduction</a>
           </li>
           <li>
-            <a href="libndls" title="libndls - TI-Nspire-specific library">libndls - TI-Nspire-specific library</a>
+            <a href="Libndls" title="libndls - TI-Nspire-specific library">libndls - TI-Nspire-specific library</a>
           </li>
           <li>
             <a href="Syscalls" title="Syscalls and standard libraries">Syscalls and standard libraries</a>
@@ -79,7 +79,7 @@ because TI does not have time for it!
       <td>
         <ul>
           <li>
-            <a href="Memory-mapped_I/O_ports" title="Memory-mapped I/O ports">Memory-mapped I/O ports</a>
+            <a href="Memory-mapped_IO_ports" title="Memory-mapped I/O ports">Memory-mapped I/O ports</a>
           </li>
           <li>
             <a href="Virtual_Memory" title="Virtual Memory">Virtual Memory</a>
@@ -139,9 +139,6 @@ because TI does not have time for it!
           </li>
           <li>
             <a href="Miscellaneous_Information" title="Miscellaneous Information">Miscellaneous Information</a>
-          </li>
-          <li>
-            <a href="TI-Nspire_CAS_Software" title="TI-Nspire CAS Software">TI-Nspire CAS Software</a>
           </li>
           <li>
             <a href="Links" title="Links">Links</a>
