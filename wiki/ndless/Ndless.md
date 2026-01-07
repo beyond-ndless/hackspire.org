@@ -17,7 +17,7 @@ title="assembly programs">assembly programs</a>.
 Find help for any Ndless related question or issues on the [issue
 tracker](https://github.com/ndless-nspire/Ndless/issues).
 
-'''[Latest stable release](http://ndless.me/)
+[Latest stable release](http://ndless.me/)
 
 ## Developing with Ndless
 

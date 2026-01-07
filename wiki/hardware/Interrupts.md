@@ -66,55 +66,54 @@ On the TI-Nspire, there can be up to 32 different interrupt sources,
 numbered 0-31. The following is a list of the currently known IRQ
 numbers:
 
-- IRQ 1 = <a href="/Memory-mapped_I/O_ports_on_CX#90020000_-_Serial_UART"
+- IRQ 1 = <a href="/Memory-mapped_IO_ports_on_CX#90020000_-_Serial_UART"
   class="wikilink" title="Serial UART">Serial UART</a>
 - IRQ 3 =
-  <a href="/Memory-mapped_I/O_ports_on_CX#90060000_-_Watchdog_timer"
+  <a href="/Memory-mapped_IO_ports_on_CX#90060000_-_Watchdog_timer"
   class="wikilink" title="Watchdog timer">Watchdog timer</a>
 - IRQ 4 =
-  <a href="/Memory-mapped_I/O_ports_on_CX#90090000_-_Real-Time_Clock_(RTC)"
+  <a href="/Memory-mapped_IO_ports_on_CX#90090000_-_Real-Time_Clock_(RTC)"
   class="wikilink" title="RTC">RTC</a>
 - IRQ 7 = <a
-  href="/Memory-mapped_I/O_ports_on_CX#90000000_-_General_Purpose_I/O_(GPIO)"
+  href="/Memory-mapped_IO_ports_on_CX#90000000_-_General_Purpose_I/O_(GPIO)"
   class="wikilink" title="GPIO">GPIO</a>
 - IRQ 8 =
-  <a href="/Memory-mapped_I/O_ports_on_CX#B0000000_-_USB_OTG_controller"
+  <a href="/Memory-mapped_IO_ports_on_CX#B0000000_-_USB_OTG_controller"
   class="wikilink" title="USB OTG">USB OTG</a>
 - IRQ 9 =
-  <a href="/Memory-mapped_I/O_ports_on_CX#B4000000_-_USB_HOST_controller"
+  <a href="/Memory-mapped_IO_ports_on_CX#B4000000_-_USB_HOST_controller"
   class="wikilink" title="USB HOST">USB HOST</a>
 - IRQ 11 = <a
-  href="/Memory-mapped_I/O_ports_on_CX#C4000000_-_Analog-to-Digital_Converter_(ADC)"
+  href="/Memory-mapped_IO_ports_on_CX#C4000000_-_Analog-to-Digital_Converter_(ADC)"
   class="wikilink" title="ADC">ADC</a>
 - IRQ 13 = <a
-  href="/Memory-mapped_I/O_ports_on_Classic#AC000000_-_SD_Host_Controller"
+  href="/Memory-mapped_IO_ports_on_Classic#AC000000_-_SD_Host_Controller"
   class="wikilink" title="SD Host Controller">SD Host Controller</a>
 - IRQ 14 = <a
-  href="/Memory-mapped_I/O_ports_on_CX#900F0000_-_HDQ/1-Wire_and_LCD_contrast"
+  href="/Memory-mapped_IO_ports_on_CX#900F0000_-_HDQ/1-Wire_and_LCD_contrast"
   class="wikilink" title="HDQ/1-Wire and LCD Contrast">HDQ/1-Wire and LCD
   Contrast</a>
 - IRQ 15 =
-  <a href="/Memory-mapped_I/O_ports_on_CX#900B0000_-_Power_management"
+  <a href="/Memory-mapped_IO_ports_on_CX#900B0000_-_Power_management"
   class="wikilink" title="Power management">Power management</a>
 - IRQ 16 =
-  <a href="/Memory-mapped_I/O_ports_on_CX#900E0000_-_Keypad_controller"
+  <a href="/Memory-mapped_IO_ports_on_CX#900E0000_-_Keypad_controller"
   class="wikilink" title="Keypad">Keypad</a>
-- IRQ 17 = <a href="/Memory-mapped_I/O_ports_on_CX#90010000_-_Fast_timer"
+- IRQ 17 = <a href="/Memory-mapped_IO_ports_on_CX#90010000_-_Fast_timer"
   class="wikilink" title="Fast timer">Fast timer</a>
 - IRQ 18 =
-  <a href="/Memory-mapped_I/O_ports_on_CX#900C0000_-_First_timer"
+  <a href="/Memory-mapped_IO_ports_on_CX#900C0000_-_First_timer"
   class="wikilink" title="First timer">First timer</a>
 - IRQ 19 =
-  <a href="/Memory-mapped_I/O_ports_on_CX#900D0000_-_Second_timer"
+  <a href="/Memory-mapped_IO_ports_on_CX#900D0000_-_Second_timer"
   class="wikilink" title="Second timer">Second timer</a>
 - IRQ 20 =
-  <a href="/Memory-mapped_I/O_ports_on_CX#90050000_-_I2C_controller"
+  <a href="/Memory-mapped_IO_ports_on_CX#90050000_-_I2C_controller"
   class="wikilink" title="I2C">I2C</a>
 - IRQ 21 =
-  <a href="/Memory-mapped_I/O_ports_on_CX#C0000000_-_LCD_controller"
+  <a href="/Memory-mapped_IO_ports_on_CX#C0000000_-_LCD_controller"
   class="wikilink" title="LCD controller">LCD controller</a>
-- IRQ 22 = <a
-  href="/Memory-mapped_I/O_ports_on_Classic#90100000_-_TI-84_Plus_link_port"
+- IRQ 22 = <a href="/Memory-mapped_IO_ports_on_Classic#90100000_-_TI-84_Plus_link_port"
   class="wikilink" title="TI-84 Plus link port">TI-84 Plus link port</a>
   (?)
 

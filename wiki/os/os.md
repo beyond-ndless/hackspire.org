@@ -1,6 +1,6 @@
 ---
 title: Operating System
-permalink: /os/
+permalink: /Operating_System/
 layout: page
 nav_order: 5
 ---
