@@ -1,5 +1,5 @@
 ---
-title: Memory-mapped IO ports on CX II
+title: Memory-mapped I/O ports on CX II
 permalink: /Memory-mapped_IO_ports_on_CX_II/
 parent: Memory-mapped I/O ports
 layout: page
