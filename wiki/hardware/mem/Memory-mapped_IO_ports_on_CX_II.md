@@ -31,6 +31,8 @@ The same interface as 900C0000/900D0000, see
 <a href="#900d0000---second-timer" class="wikilink"
 title="Second timer">Second timer</a>.
 
+For this timer, the configurable speed register defaults to no bits set.
+
 ## 90020000 - Serial UART
 
 [PL011](http://infocenter.arm.com/help/topic/com.arm.doc.ddi0183f/DDI0183.pdf).
@@ -124,12 +126,28 @@ A Faraday FTADCC010.
 
 Same port structure as
 <a href="#900d0000---second-timer" class="wikilink"
-title="Second timer">Second timer</a>.
+title="Second timer">Second timer</a>. 
+
+For this timer, the configurable speed register defaults to bit 0 set.
 
 ## 900D0000 - Second timer
 
 Timer is a
-[SP804](http://infocenter.arm.com/help/index.jsp?topic=/com.arm.doc.ddi0271d/Babehiha.html).
+[SP804](https://developer.arm.com/documentation/ddi0271/latest/) with an
+additional speed control register at +0x80.
+
+- 900D0080 (R/W): Speed control register
+  - Bits 0-1: Speed mode
+    - No bits set: Fastest, runs at the APB clock frequency, typically
+      99MHz on the CX II.
+    - Bit 0 set: Runs at 12MHz(?).
+    - Bit 1 set: Runs at 32768Hz(?). This bit takes priority over bit 0.
+
+For this timer, the configurable speed register defaults to bit 1 set.
+
+The Ndless SDK uses this timer for its implementation of msleep. Configuring
+the speed control register to something other than the default will cause
+msleep to not work correctly.
 
 ## 900E0000 - Keypad controller
 
