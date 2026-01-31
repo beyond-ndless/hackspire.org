@@ -238,6 +238,13 @@ results in a 320x320 image in the right orientation for the LCD. This
 means that it can't be used as generic RAM. How this mechanism works
 isn't known yet.
 
+# AC000000 - SDIO Controller
+
+Seems to be the same as in the [Zynq 7000](https://docs.amd.com/r/en-US/ug585-zynq-7000-SoC-TRM/SD-Controller-sdio), but not much is known.
+
+Only used in Diagnostics, among other things it is used to pull a factory 
+NAND image from an attached SD card. Where this SD card attaches is unknown.
+
 ## B0000000 - USB OTG/Host/Device controller (top)
 
 An FOTG210 connected to the top USB port.
