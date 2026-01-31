@@ -238,7 +238,7 @@ results in a 320x320 image in the right orientation for the LCD. This
 means that it can't be used as generic RAM. How this mechanism works
 isn't known yet.
 
-# AC000000 - SDIO Controller
+## AC000000 - SDIO Controller
 
 Seems to be the same as in the [Zynq 7000](https://docs.amd.com/r/en-US/ug585-zynq-7000-SoC-TRM/SD-Controller-sdio), but not much is known.
 
