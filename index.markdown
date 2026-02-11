@@ -16,6 +16,7 @@ because TI does not have time for it!
 ## Site news
 
 |----|----|----|
+| **Feb 12, 2026** | Jim, Satyamedh | The Hackspire wiki is now powered by Jekyll on [Github Pages](https://github.com/beyond-ndless/hackspire.org)! |
 | **June 21, 2019** | Jim Bauwens | The Hackspire wiki is back online after a downtime of over a month due to a server failure |
 | **July 2, 2017** | Jim Bauwens | The Hackspire wiki is 10 years old today! Many thanks to all the contributors for making Hackspire what it is today! |
 | **June 15, 2016** | Jim Bauwens | hackspire.org is now the main domain name |
