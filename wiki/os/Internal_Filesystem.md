@@ -50,16 +50,18 @@ information
 The checksum in the unit header is calculated by adding all the bytes in
 the header mod 2^16.
 
-`uint16_t checksum(void *_ptr, size_t size) {`
-`   uint16_t sum = 0;`
-`   uint8_t *ptr = _ptr;`
+```c
+uint16_t checksum(void *_ptr, size_t size) {
+   uint16_t sum = 0;
+   uint8_t *ptr = _ptr;
 
-`   while (size--) {`
-`       sum += *ptr++;`
-`   }`
+   while (size--) {
+       sum += *ptr++;
+   }
 
-`   return sum;`
-`}`
+   return sum;
+}
+```
 
 ### Allocation information
 
