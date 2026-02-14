@@ -206,7 +206,7 @@ A new "Aladdin PMU" unit. Not much known.
 - 90140050 (R/W): Disable bus access to peripherals. Reads will just
   return the last word read from anywhere in the address range, and
   writes will be ignored.
-  - Bit 0: <a href="#900a0000---miscellaneous" class="wikilink" title="#900a0000 - Miscellaneous">#900a0000 - Miscellaneous</a>
+  - Bit 0: <a href="#900a0000---miscellaneous" class="wikilink" title="#900a0000 - Miscellaneous">#900A0000 - Miscellaneous</a>
   - Bit 9: <a href="#c8010000---triple-des-encryption" class="wikilink"
     title="#C8010000 - Triple DES encryption">#C8010000 - Triple DES
     encryption</a>
@@ -214,6 +214,8 @@ A new "Aladdin PMU" unit. Not much known.
     <a href="#cc000000---sha-256-hash-generator" class="wikilink"
     title="#CC000000 - SHA-256 hash generator">#CC000000 - SHA-256 hash
     generator</a>
+  - Bit 11: <a href="#900c0000-first-timer" class="wikilink"
+    title="#900C0000 - First Timer">#900C0000 - First Timer</a>
   - Bit 13: <a href="#90060000---watchdog-timer" class="wikilink"
     title="#90060000 - Watchdog timer">#90060000 - Watchdog timer</a>
     (?)
