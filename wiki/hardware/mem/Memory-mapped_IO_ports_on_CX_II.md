@@ -203,6 +203,8 @@ brightness is controlled by 90130014, the OS writes 0 (brightest) to 225
 A new "Aladdin PMU" unit. Not much known.
 
 - 90140000 (R/?): Reason for waking up from low-power mode.
+- 90140020 (?/W): Some sort of control register, bit 1 causes the calculator to sleep and reset at 0x0.
+- 90140030 (W): Clocks? Triggers an interrupt
 - 90140050 (R/W): Disable bus access to peripherals. Reads will just
   return the last word read from anywhere in the address range, and
   writes will be ignored.
@@ -222,6 +224,10 @@ A new "Aladdin PMU" unit. Not much known.
   - Bit 26: <a href="#90050000---i2c-controller" class="wikilink"
     title="#90050000 - I2C controller">#90050000 - I2C controller</a>
     (?)
+- 90140060 (R/W): Another disable register?
+- 901400C4 (W): Unknown
+- 90140800-901400804 (R/W): Unknown
+- 90140808-90140080C (R): efuse values
 
 ## A0000000 - Boot1 ROM again
 
