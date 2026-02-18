@@ -102,30 +102,30 @@ it doesn't recognize, as well as in some exceptional conditions.
 
 The following code adds 2 and 2.
 
-{% highlight asm %}
-    .asciz  "PRG"
-    push    {r4-r11, lr}
+{% highlight armasm %}
+.asciz  "PRG"
+push    {r4-r11, lr}
 
-    msr cpsr_c, #0x13           @ Enable interrupts
+msr cpsr_c, #0x13           @ Enable interrupts
 
-    @ Set Configuration Valid and Jazelle Enable bits
-    mov r0, #2
-    mcr p14, 7, r0, c1, c0, 0
-    mov r0, #1
-    mcr p14, 7, r0, c2, c0, 0
+@ Set Configuration Valid and Jazelle Enable bits
+mov r0, #2
+mcr p14, 7, r0, c1, c0, 0
+mov r0, #1
+mcr p14, 7, r0, c2, c0, 0
 
-    mov r5, #0x18000000         @ Handler table pointer (must be 1024-byte aligned)
-    add r6, r5, #0x800          @ Stack pointer
-    add r7, r5, #0x900          @ Local variables pointer
+mov r5, #0x18000000         @ Handler table pointer (must be 1024-byte aligned)
+add r6, r5, #0x800          @ Stack pointer
+add r7, r5, #0x900          @ Local variables pointer
 
-    @ Set up handler for ireturn bytecode
-    adr r0, ireturn
-    str r0, [r5, #0xAC * 4]
+@ Set up handler for ireturn bytecode
+adr r0, ireturn
+str r0, [r5, #0xAC * 4]
 
-    @ Execute the bytecode
-    adr r12, jazelle_unavailable
-    adr lr, bytecode
-    bxj r12
+@ Execute the bytecode
+adr r12, jazelle_unavailable
+adr lr, bytecode
+bxj r12
 
 bytecode:
     .byte   0x05    @ iconst_2
