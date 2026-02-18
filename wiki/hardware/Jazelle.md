@@ -21,8 +21,8 @@ but unfortunately this document is not available to the public.
 ## Configuration registers
 
 Configuration registers may be read with the instruction
-`MRC{`<cond>`} p14, 7, `<Rd>`, `<CRn>`, c0`, or written with
-`MCR{`<cond>`} p14, 7, `<Rd>`, `<CRn>`, c0`. A list of known `CRn`
+`MRC{<cond>} p14, 7, <Rd>, <CRn>, c0`, or written with
+`MCR{<cond>} p14, 7, <Rd>, <CRn>, c0`. A list of known `CRn`
 follows:
 
 - c0: Jazelle Identity register (read-only)
@@ -102,7 +102,7 @@ it doesn't recognize, as well as in some exceptional conditions.
 
 The following code adds 2 and 2.
 
-``` asm
+{% highlight asm %}
     .asciz  "PRG"
     push    {r4-r11, lr}
 
@@ -153,4 +153,4 @@ jazelle_unavailable:
     mcr p14, 7, r0, c2, c0, 0
 
     pop {r4-r11, pc}
-```
+{% endhighlight %}
