@@ -152,6 +152,12 @@ because TI does not have time for it!
 
 ## Other TI-Nspire developer communities
 
+### The Ndless Discord server
+
+To get assistance with Ndless, the main exploit used for the TI-Nspire,
+join the [Ndless Discord](https://discord.gg/4Bbx4nX8cm) where you can
+talk with developers, request assistance, and share your projects.
+
 ### Forums and News sites
 
 Although not specific to the TI-Nspire, these web sites are visited by
