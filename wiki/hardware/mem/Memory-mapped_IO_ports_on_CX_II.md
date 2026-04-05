@@ -249,10 +249,10 @@ isn't known yet.
 
 ## AC000000 - SDIO Controller
 
-Seems to be the same as in the [Zynq 7000](https://docs.amd.com/r/en-US/ug585-zynq-7000-SoC-TRM/SD-Controller-sdio), but not much is known.
+See [SDHC spec](https://web.archive.org/web/20100707091839/http://www.sdcard.org/developers/tech/host_controller/simple_spec/Simplified_SD_Host_Controller_Spec.pdf) for programming details.
 
-Only used in Diagnostics, among other things it is used to pull a factory 
-NAND image from an attached SD card. Where this SD card attaches is unknown.
+Used in WiFi card communication, as well as in Diagnostics
+where it is used to pull a factory NAND image.
 
 ## B0000000 - USB OTG/Host/Device controller (top)
 
