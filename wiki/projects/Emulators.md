@@ -26,6 +26,8 @@ dump the *boot1.img.tns* and *boot2.img.tns* from your TI-Nspire. Diags
 and Manuf can also be dumped and used in Firebird (see the flash
 creation feature)
 
+If you wish to emulate a CX II, you will also require decryption keys extracted and injected using [eMMUlate](https://github.com/satyamedh/eMMUlate) into the btrom file produced by PolyDumper. During installation, you might enter the debugger, in which case you need to type `c` into the debugger text box and hit enter, or see a black screen, where you can safely reset after a couple seconds.
+
 ## Obsolete programs
 
 ### nspire_emu
