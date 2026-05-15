@@ -272,7 +272,32 @@ An FTDMAC020 with main SDRAM and LCD RAM (everything?) connected to
 AHB1. The OS uses this to copy the framebuffer into LCD RAM. It is a
 derivative of the
 [PL080](https://developer.arm.com/documentation/ddi0196/latest/) with
-some changes
+some changes.
+
+Based on the values found in control registers, the OS likely uses
+channel 0 to copy the framebuffer into LCD RAM.
+
+Two of the controller's read-only registers contain configuration information. The values from the calculator have already been recorded below.
+
+- +0x30: FTDMAC020_REVISION
+  - Bits 23-16: Major version
+  - Bits 15-8: Minor version
+  - Bits 7-0: Release number
+  - Value read from calculator: 0x011900
+    - Major version: 0x01
+    - Minor version: 0x19
+    - Release number: 0x00
+- +0x34: FTDMAC020_FEATURE
+  - Bits 15-12: DMA Channels
+  - Bit 10: Bridge (0 = has built-in bridge, 1 = no bridge)
+  - Bit 9: Dual AHB (0 = AHB0 only, 1 = AHB0 and AHB1)
+  - Bit 8: LLP support (1 = supports linked lists, 0 = no)
+  - Value read from calculator: 0x6303
+    - DMA Channels: 6
+    - Bridge: has built-in bridge
+    - Dual AHB: AHB0 and AHB1
+    - LLP support: yes
+    - Lower bits: unknown
 
 ## C0000000 - LCD controller
 
