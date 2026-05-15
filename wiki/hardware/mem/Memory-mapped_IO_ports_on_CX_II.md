@@ -277,9 +277,10 @@ some changes.
 Based on the values found in control registers, the OS likely uses
 channel 0 to copy the framebuffer into LCD RAM.
 
-Two of the controller's read-only registers contain configuration information. The values from the calculator have already been recorded below.
+Two of the controller's read-only registers contain supported features and revision information.
+The values from the calculator have already been recorded below.
 
-- +0x30: FTDMAC020_REVISION
+- BC000030: FTDMAC020_REVISION
   - Bits 23-16: Major version
   - Bits 15-8: Minor version
   - Bits 7-0: Release number
@@ -287,7 +288,7 @@ Two of the controller's read-only registers contain configuration information. T
     - Major version: 0x01
     - Minor version: 0x19
     - Release number: 0x00
-- +0x34: FTDMAC020_FEATURE
+- BC000034: FTDMAC020_FEATURE
   - Bits 15-12: DMA Channels
   - Bit 10: Bridge (0 = has built-in bridge, 1 = no bridge)
   - Bit 9: Dual AHB (0 = AHB0 only, 1 = AHB0 and AHB1)
