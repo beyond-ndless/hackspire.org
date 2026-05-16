@@ -277,8 +277,9 @@ some changes.
 Based on the values found in control registers, the OS likely uses
 channel 0 to copy the framebuffer into LCD RAM.
 
-Two of the controller's read-only registers contain supported features and revision information.
-The values from the calculator have already been recorded below.
+Two of the controller's read-only registers contain supported features
+and revision information. The values from the calculator have already
+been recorded below.
 
 - BC000030: FTDMAC020_REVISION
   - Bits 23-16: Major version
@@ -297,6 +298,8 @@ The values from the calculator have already been recorded below.
     - DMA Channels: 6
     - Bridge: has built-in bridge
     - Dual AHB: AHB0 and AHB1
+      - The controller claims support for both AHB0 and AHB1, but trying to use AHB0
+        for either SRC or DST results in a bus error. AHB1 works as expected.
     - LLP support: yes
     - Lower bits: unknown
 
