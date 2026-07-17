@@ -298,10 +298,26 @@ been recorded below.
     - DMA Channels: 6
     - Bridge: has built-in bridge
     - Dual AHB: AHB0 and AHB1
-      - The controller claims support for both AHB0 and AHB1, but trying to use AHB0
-        for either SRC or DST results in a bus error. AHB1 works as expected.
     - LLP support: yes
     - Lower bits: unknown
+
+The DMA controller has some unexplained behavior that can make it tricky to
+use. The quirks found so far are listed below. If more research resolves any
+of these mysteries, please edit this page or join the Ndless Discord.
+
+- Each channel's transfer size register (CH_SIZE) supports values beyond 12 bits
+  (possibly up to 16 bits?). This allows one-shot transfers up to 262,140 bytes
+  (65535 * 4-byte transfer width), but only a 153,600-byte transfer from SDRAM
+  to VRAM has been verified working.
+- The controller claims support for both AHB0 and AHB1, but trying to use AHB0
+  for either SRC or DST results in a bus error. Using AHB1 works as expected.
+- LLP support is claimed, but attempting to use it seems to lock up the
+  calculator, where no software can recover it. However, it has been observed
+  working in very specific circumstances (SRAM -> SRAM transfers only, LLIs
+  placed in SRAM). Research into the specific conditions that allow linked-list
+  transfers is welcome.
+- Attempting to use 64-bit transfer widths will also lock up the calculator,
+  despite the Linux driver mentioning support for the FTDMAC020.
 
 ## C0000000 - LCD controller
 
