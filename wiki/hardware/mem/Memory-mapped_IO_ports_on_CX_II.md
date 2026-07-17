@@ -304,6 +304,7 @@ been recorded below.
 The DMA controller has some unexplained behavior that can make it tricky to
 use. The quirks found so far are listed below. If more research resolves any
 of these mysteries, please edit this page or join the Ndless Discord.
+
 - Each channel's transfer size register (CH_SIZE) supports values beyond 12 bits
   (possibly up to 16 bits?). This allows one-shot transfers up to 262,140 bytes
   (65535 * 4-byte transfer width), but only a 153,600-byte transfer from SDRAM
