@@ -56,16 +56,16 @@ the TI-Nspire *is ready to boot* (for example after a battery has been
 removed and reinstalled), it can be turned on by holding the following
 keys while pressing ON (making sure ON is the last key pressed):
 
-|         |              |                  |                 |                                                                                                                       |
-|---------|--------------|------------------|-----------------|-----------------------------------------------------------------------------------------------------------------------|
-|         | Clickpad     | TI-84+ Keypad    | Touchpad        |                                                                                                                       |
-| Boot 1: | Home+Enter+B | Graph+Enter+Apps | Doc+Enter+2     |                                                                                                                       |
-|         | Home+Enter+G | Graph+Enter+Tan  | Doc+Enter+Minus |                                                                                                                       |
-|         | Esc+Menu+G \ | y=+Clear+Tan     | Esc+Menu+Minus  | toggle diagnostics - if boot data is configured to try to run diagnostics first, this will skip them, and vice versa. |
-|         |              |                  | FLAG+VAR+0      | enters some sort of recovery mode                                                                                     |
-|         |              |                  | FLAG+VAR+3      | allows flashing of BootLoader (boot2) over UART using XMODEM                                                          |
-| Boot 2: | Home+Enter+X | (not possible)   | Doc+Enter+?!    |                                                                                                                       |
-|         | Home+Enter+P | Graph+Enter+8    | Doc+Enter+EE    |                                                                                                                       |
+|         |              |                  |                 |                                                                                                                                                                                                             |
+|---------|--------------|------------------|-----------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|         | Clickpad     | TI-84+ Keypad    | Touchpad        |                                                                                                                                                                                                             |
+| Boot 1: | Home+Enter+B | Graph+Enter+Apps | Doc+Enter+2     | waits for a boot 2 image to be downloaded through RS232                                                                                                                                                     |
+|         | Home+Enter+G | Graph+Enter+Tan  | Doc+Enter+Minus | waits for a diagnostic image to be downloaded through RS232 (Warning: This will erase the current diagnostic image first!)                                                                                  |
+|         | Esc+Menu+G \ | y=+Clear+Tan     | Esc+Menu+Minus  | toggle diagnostics - if boot data is configured to try to run diagnostics first, this will skip them, and vice versa.                                                                                       |
+|         |              |                  | FLAG+VAR+0      | enters some sort of recovery mode                                                                                                                                                                           |
+|         |              |                  | FLAG+VAR+3      | allows flashing of BootLoader (boot2) over UART using XMODEM                                                                                                                                                |
+| Boot 2: | Home+Enter+X | (not possible)   | Doc+Enter+?!    | waits for a test image to be downloaded through RS232                                                                                                                                                       |
+|         | Home+Enter+P | Graph+Enter+8    | Doc+Enter+EE    | brings up the maintenance menu. It allows to remove and flash an OS image, delete the document folder contents, or do a complete format. To delete documents on a Touchpad, T must be pressed instead of 2. |
 
 
 ## Upgrading the boot 2
