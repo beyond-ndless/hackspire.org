@@ -386,8 +386,7 @@ Possibly used to communicate with the wireless cradle.
 
 ## AC000000 - SD Host Controller
 
-<!-- http://www.sdcard.org/developers/tech/host_controller/simple_spec/ 404-->
-See <https://www.taterli.com/wp-content/uploads/2017/05/SD-Host-Controller-Simplified-SpecificationV4.20.pdf>
+See [SDHC spec](https://web.archive.org/web/20100707091839/http://www.sdcard.org/developers/tech/host_controller/simple_spec/Simplified_SD_Host_Controller_Spec.pdf) for programming details.
 
 ## B0000000 - USB OTG controller
 
@@ -399,7 +398,7 @@ support it and will never succeed in enumerating them.
 
 Appears to be Freescale's USB OTG controller revision 0x42. Its
 documentation can be found in the [MCF54455 reference
-manual](http://cache.freescale.com/files/32bit/doc/ref_manual/MCF54455RM.pdf)
+manual](https://web.archive.org/web/20120320112636/http://cache.freescale.com/files/32bit/doc/ref_manual/MCF54455RM.pdf)
 which happens to use the same revision of the module. The host interface
 is based on EHCI 1.0.
 
@@ -475,8 +474,6 @@ During role switching some GPIO output registers are modified.
 - GPIO5:
   - Active low.
   - Controls VBUS/pull-up (drives VBUS to 5v for host mode)
-
-<!-- -->
 
 - USB-B: GPIO6
   - Active low.

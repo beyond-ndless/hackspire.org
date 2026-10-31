@@ -309,7 +309,7 @@ Otherwise, it'll attempt to connect at high speed for devices that
 support it and will never succeed in enumerating them.
 
 Documentation can be found in the [IMX233 reference
-manual](http://www.freescale.com/files/dsp/doc/ref_manual/IMX23RM.pdf).
+manual](https://web.archive.org/web/20160705172621/http://www.nxp.com/files/dsp/doc/ref_manual/IMX23RM.pdf).
 The host interface is, again, based on EHCI; but the register defaults
 are different. The addresses have been adjusted from the ones contained
 in the IMX233 reference manual.
