@@ -166,6 +166,7 @@ Somewhere there's SPI, too.
 
 Notes: Pins marked with a `#` activate on a low signal. Known inputs are pin 10, pin 21 and pin 26.
 
+<img src="../../assets/images/nspire-dock.png" alt="Connector J01 Pinout" width="50%">
 
 ### UART
 
