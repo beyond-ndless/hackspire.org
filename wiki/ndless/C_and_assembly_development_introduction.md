@@ -115,11 +115,11 @@ directory of the console:
 Ndless programs are built with *GNU Make*, which is run with the command
 `make`. So let's *make* the program:
 
-`$ make`
-`nspire-gcc -Wall -W -marm -Os -c hello-sdl.c`
-`mkdir -p .`
-`nspire-ld hello-sdl.o -o ./helloworld-sdl.elf `
-`genzehn --input ./helloworld-sdl.elf --output ./helloworld-sdl.tns --name "helloworld-sdl"`
+`$ make` \
+`nspire-gcc -Wall -W -marm -Os -c hello-sdl.c` \
+`mkdir -p .` \
+`nspire-ld hello-sdl.o -o ./helloworld-sdl.elf ` \
+`genzehn --input ./helloworld-sdl.elf --output ./helloworld-sdl.tns --name "helloworld-sdl"` \
 `make-prg ./helloworld-sdl.tns ./helloworld-sdl.prg.tns`
 
 `nspire-gcc` is Ndless's wrapper for the GNU C Compiler *GCC*, which
@@ -143,8 +143,8 @@ If you want to create a program from scratch:
 - Create a new directory for the program
 - Type in a console:
 
-`cd "`<your directory path>`"`
-`nspire-tools new `<name>
+`cd <your directory path>`
+`nspire-tools new <name>`
 
 
 where <name> is your program name. This will create a Makefile to build
