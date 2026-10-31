@@ -355,8 +355,7 @@ ADC values can be read at `/sys/bus/iio/devices/iio:device0` (310 = 1V).
 
 ## More information
 
-- \[<http://www.omnimaga.org/ti-nspire-projects/calling-all-linux-kernel-developers>!
-  Omnimaga thread\]
+- [Omnimaga thread](http://www.omnimaga.org/ti-nspire-projects/calling-all-linux-kernel-developers)
 - [FAQ](http://www.omnimaga.org/ti-nspire-projects/calling-all-linux-kernel-developers!/msg323459/#msg323459)
 - [TI-Planet nightly builds](http://tiplanet.org/nspire-linux-builds/)
 - [Linux configs](https://github.com/Vogtinator/nspire-linux-configs)

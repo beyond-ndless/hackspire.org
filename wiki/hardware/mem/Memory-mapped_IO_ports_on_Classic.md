@@ -386,7 +386,8 @@ Possibly used to communicate with the wireless cradle.
 
 ## AC000000 - SD Host Controller
 
-See <http://www.sdcard.org/developers/tech/host_controller/simple_spec/>
+<!-- http://www.sdcard.org/developers/tech/host_controller/simple_spec/ 404-->
+See <https://www.taterli.com/wp-content/uploads/2017/05/SD-Host-Controller-Simplified-SpecificationV4.20.pdf>
 
 ## B0000000 - USB OTG controller
 
