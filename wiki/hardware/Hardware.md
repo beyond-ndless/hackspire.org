@@ -143,17 +143,30 @@ Somewhere there's SPI, too.
 
 |                                         |                 |
 |-----------------------------------------|-----------------|
-| Vcc                                     | pin 2           |
-| Rx                                      | pin 3           |
-| Tx                                      | pin 4           |
+| Unknown                                 | pin 1           |
+| Unknown                                 | pin 2           |
+| Unknown                                 | pin 3           |
+| Unknown                                 | pin 4           |
 | GND                                     | pin 5 (long)    |
-| GPIO4 / USB Data+ with Navigator Cradle | pin 6           |
-| USB Data- with Navigator Cradle         | pin 7           |
-| Vin                                     | pin 8 (medium)  |
-| GPIO0                                   | pin 17          |
-| GPIO22                                  | pin 18          |
-| Vin                                     | pin 19 (medium) |
+| USB Data+                               | pin 6           |
+| USB Data-                               | pin 7           |
+| GND                                     | pin 8 (medium)  |
+| GPIO22 / Dock Status LED                | pin 9           |
+| GPIO0 / Dock Detect#                    | pin 10          |
+| GPIO28 / Dock Status LED                | pin 11          |
+| GPIO27 / Dock Checkmark LED             | pin 12          |
+| USB VIN                                 | pin 19 (medium) |
+| GPIO26                                  | pin 20          |
+| GPIO4 / Cradle Detect#                  | pin 21          |
 | GND                                     | pin 22 (long)   |
+| TX                                      | pin 23          |
+| RX / GPIO19                             | pin 24          |
+| VCC                                     | pin 25          |
+| USB VBUS or VSLED                       | pin 26          |
+
+Notes: Pins marked with a `#` activate on a low signal. Known inputs are pin 10, pin 21 and pin 26.
+
+<img src="../../assets/images/nspire-dock.png" alt="Connector J01 Pinout" width="50%">
 
 ### UART
 
@@ -194,8 +207,8 @@ alternative, which can be built on Windows with Cygwin.
 ### Power supply
 
 You can use the TI-Nspire with an external power supply (5V to 6V)
-instead of the batteries. Use pad P1, pin 8 or pin 19 for V+ and pad P2,
-pin 5 or pin 22 for GND. It will boot, but print "Critical voltage
+instead of the batteries. Use pad P1 or pin 19 for V+ and pad P2,
+pin 5, pin 8 or pin 22 for GND. It will boot, but print "Critical voltage
 detected. Forcing shutdown." on RS232 and shutdown. It seems that the
 battery voltage of measured using only 2 batteries. A workaround is to
 use two resistors (100K work) to set the middle point at half voltage.
