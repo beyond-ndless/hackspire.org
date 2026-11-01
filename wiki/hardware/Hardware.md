@@ -138,15 +138,14 @@ interfaces as JTAG, I2C or whatever.
 
 ### Connector J01 - Dock connector
 
-Pins currently known, probably there are more GPIOs accessible.
-Somewhere there's SPI, too.
+The dock connector is the main route of commmunication for the TI-Nspire's peripherals. Docking stations are just fancy USB hubs that communicate over the data lines, and use GPIO for the LEDs and detection. GPIO 0 is pulled low by the dock to detect dock insertion, and USB VBUS is set to 5V to initiate the USB enumeration process. GPIO 22, 27, and 28 are used to control the 3 LEDs on the dock, indicating its connection status, and battery level. Cradles also interface using the dock over SPI. Cradle Detect# is pulled down by a resistor in the cradle upon connection. There is also UART, for viewing system logs during use. See [UART](#uart).
 
 |                                         |                 |
 |-----------------------------------------|-----------------|
-| Unknown                                 | pin 1           |
-| Unknown                                 | pin 2           |
-| Unknown                                 | pin 3           |
-| Unknown                                 | pin 4           |
+| SPI SDO                                 | pin 1           |
+| SPI SDI                                 | pin 2           |
+| SPI SCK                                 | pin 3           |
+| SPI Chip Select#                        | pin 4           |
 | GND                                     | pin 5 (long)    |
 | USB Data+                               | pin 6           |
 | USB Data-                               | pin 7           |
