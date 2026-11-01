@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net">
   <diagram name="Page-1" id="2UuT6AtFuQ-8BOD2CxuW">
-    <mxGraphModel dx="2064" dy="1199" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1713" dy="995" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -13,8 +13,8 @@
         <mxCell id="zeg-ShP1Q3ycIV5MFvIr-4" parent="-_EjoeBR42t3dtbNsmxu-1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=light-dark(#FFFFFF,#FFB366);strokeColor=light-dark(#B85450,#000000);fillStyle=auto;" value="" vertex="1">
           <mxGeometry height="40" width="146" as="geometry" />
         </mxCell>
-        <mxCell id="zeg-ShP1Q3ycIV5MFvIr-6" parent="-_EjoeBR42t3dtbNsmxu-1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;autosize=1;resizable=0;fontColor=light-dark(#000000,#000000);fontSize=21;" value="SPI SDO" vertex="1">
-          <mxGeometry height="40" width="110" x="18" y="0.004545454545454852" as="geometry" />
+        <mxCell id="zeg-ShP1Q3ycIV5MFvIr-6" parent="-_EjoeBR42t3dtbNsmxu-1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;autosize=1;resizable=0;fontColor=light-dark(#000000,#000000);fontSize=21;" value="SPI SDI" vertex="1">
+          <mxGeometry height="40" width="100" x="23" y="0.004545454545454852" as="geometry" />
         </mxCell>
         <mxCell id="-_EjoeBR42t3dtbNsmxu-29" connectable="0" parent="1" style="group" value="" vertex="1">
           <mxGeometry height="40.00454545454546" width="146" x="278" y="60" as="geometry" />
@@ -22,8 +22,8 @@
         <mxCell id="-_EjoeBR42t3dtbNsmxu-30" parent="-_EjoeBR42t3dtbNsmxu-29" style="rounded=0;whiteSpace=wrap;html=1;fillColor=light-dark(#FFFFFF,#FFB366);strokeColor=light-dark(#B85450,#000000);fillStyle=auto;" value="" vertex="1">
           <mxGeometry height="40" width="146" as="geometry" />
         </mxCell>
-        <mxCell id="-_EjoeBR42t3dtbNsmxu-31" parent="-_EjoeBR42t3dtbNsmxu-29" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;autosize=1;resizable=0;fontColor=light-dark(#000000,#000000);" value="&lt;font style=&quot;font-size: 21px;&quot;&gt;SPI SDI&lt;/font&gt;" vertex="1">
-          <mxGeometry height="40" width="100" x="23" y="0.004545454545454852" as="geometry" />
+        <mxCell id="-_EjoeBR42t3dtbNsmxu-31" parent="-_EjoeBR42t3dtbNsmxu-29" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;autosize=1;resizable=0;fontColor=light-dark(#000000,#000000);" value="&lt;font style=&quot;font-size: 21px;&quot;&gt;SPI SDO&lt;/font&gt;" vertex="1">
+          <mxGeometry height="40" width="110" x="18" y="0.004545454545454852" as="geometry" />
         </mxCell>
         <mxCell id="-_EjoeBR42t3dtbNsmxu-32" connectable="0" parent="1" style="group" value="" vertex="1">
           <mxGeometry height="40.00454545454546" width="146" x="278" y="100" as="geometry" />
