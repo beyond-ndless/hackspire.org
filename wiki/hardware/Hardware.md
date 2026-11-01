@@ -142,8 +142,8 @@ The dock connector is the main route of commmunication for the TI-Nspire's perip
 
 |                                         |                 |
 |-----------------------------------------|-----------------|
-| SPI SDO                                 | pin 1           |
-| SPI SDI                                 | pin 2           |
+| SPI SDI                                 | pin 1           |
+| SPI SDO                                 | pin 2           |
 | SPI SCK                                 | pin 3           |
 | SPI Chip Select#                        | pin 4           |
 | GND                                     | pin 5 (long)    |
